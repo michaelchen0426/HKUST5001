@@ -17,7 +17,7 @@ Python 3.6
 
 ### Enviroment Setup via virtualenv
 
-- The project is run in Mac.
+- The project is run in Mac and needs pip, virtualenv and python 3.6.
 
 - Apply virtualenv. (https://docs.python-guide.org/dev/virtualenvs/)
 ```zsh
@@ -51,7 +51,7 @@ $ deactivate
  chmod u+x setup
  ./setup
 ```
- from the root of the `IndividualProject` directory.
+ from the root of the project. It will read all dependencies from `requirements.txt` file and run pip to install them.
 
  3. Run the process:
  ```zsh
