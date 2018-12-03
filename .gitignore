@@ -1,0 +1,4 @@
+bin/
+lib/
+include/
+algorithm/__pycache__/

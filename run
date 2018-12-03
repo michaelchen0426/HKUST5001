@@ -1,0 +1,2 @@
+# python ./run.py --env "PROD" --market "344"
+python ./run.py
