@@ -1,6 +1,23 @@
 ##  Kaggle competition about https://www.kaggle.com/c/msbd5001-fall2018/data
 
-### Enviroment
+### Data
+
+Data is located in `Data` folder. 
+
+#### File descriptions
+- Data/train.csv - the training set
+- Data/test.csv - the test set
+- submission/submission.csv - submission file in the correct format
+
+#### Data fields.
+`'Time'` is the training time of the model. The other feature follows the definition in Sklearn. Specifically, `'n_samples','n_features','n_classes','n_clusters_per_class','n_informative','flip_y','scale'` describes how the synthetic dataset for training is generated using [sklearn.datasets.make_classification](http://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_classification.html), and `'penalty','l1_ratio','alpha','max_iter','random_state','n_jobs'` describes the setup of [sklearn.linear_model.SGDClassifier](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier).
+
+### Programming languages
+Python 3.6
+
+### Enviroment Setup via virtualenv
+
+- The project is run in Mac.
 
 - Apply virtualenv. (https://docs.python-guide.org/dev/virtualenvs/)
 ```zsh
@@ -26,18 +43,6 @@ $ source my_project/bin/activate
 $ deactivate
 ```
 
-### Data
-
-Data is located in `Data` folder. 
-
-#### File descriptions
-- train.csv - the training set
-- test.csv - the test set
-- sampleSubmission.csv - a sample submission file in the correct format
-
-#### Data fields.
-`'Time'` is the training time of the model. The other feature follows the definition in Sklearn. Specifically, `'n_samples','n_features','n_classes','n_clusters_per_class','n_informative','flip_y','scale'` describes how the synthetic dataset for training is generated using [sklearn.datasets.make_classification](http://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_classification.html), and `'penalty','l1_ratio','alpha','max_iter','random_state','n_jobs'` describes the setup of [sklearn.linear_model.SGDClassifier](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier).
-
 ## Running the Project
  1. Activate the virtual environment.
  2. If it is your first time running the client, install the Python dependencies:
@@ -52,7 +57,9 @@ Data is located in `Data` folder.
  chmod u+x run
  ./run
 ```
-It will generated a "result.cvs" file which contains the prediction.
+It will generated a "result.cvs" file which contains the prediction. 
+
+**Please note that you will need to open the file to add `Id` as the first column name!**
 
 ## Project Introduction
 
